@@ -3,6 +3,9 @@ import Greeting from './conditional-rendering/Greeting'
 import UserStatus from './conditional-rendering/UserStatus'
 import Warning  from './conditional-rendering/Warning'
 import Login from './conditional-rendering/Login'
+import NameList from './lists-in-react/NameList'
+import ProductList from './lists-in-react/ProductList'
+import FilteredLists from './lists-in-react/FilteredLists'
 
 
 function App() {
@@ -13,7 +16,10 @@ function App() {
       {/* <Greeting/>
       <UserStatus/>
       <Warning/> */}
-      <Login/>
+      {/* <Login/> */}
+      {/* <NameList/> */}
+      {/* <ProductList/> */}
+      <FilteredLists/>
     </>
   )
 }
