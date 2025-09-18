@@ -6,6 +6,8 @@ import Login from './conditional-rendering/Login'
 import NameList from './lists-in-react/NameList'
 import ProductList from './lists-in-react/ProductList'
 import FilteredLists from './lists-in-react/FilteredLists'
+import FindList from './lists-in-react/FindList'
+import NameForm from './controlled-inputs/NameForm'
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
       {/* <Login/> */}
       {/* <NameList/> */}
       {/* <ProductList/> */}
-      <FilteredLists/>
+      {/* <FilteredLists/> */}
+      {/* <FindList/> */}
+      <NameForm/>
     </>
   )
 }
