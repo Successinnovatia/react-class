@@ -8,6 +8,7 @@ import ProductList from './lists-in-react/ProductList'
 import FilteredLists from './lists-in-react/FilteredLists'
 import FindList from './lists-in-react/FindList'
 import NameForm from './controlled-inputs/NameForm'
+import Todo from './todo-app/Todo'
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       {/* <ProductList/> */}
       {/* <FilteredLists/> */}
       {/* <FindList/> */}
-      <NameForm/>
+      {/* <NameForm/> */}
+      <Todo/>
     </>
   )
 }
