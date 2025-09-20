@@ -9,6 +9,8 @@ import FilteredLists from './lists-in-react/FilteredLists'
 import FindList from './lists-in-react/FindList'
 import NameForm from './controlled-inputs/NameForm'
 import Todo from './todo-app/Todo'
+import Counter from './use-effect/Counter'
+import PostList from './use-effect/PostList'
 
 
 function App() {
@@ -25,7 +27,9 @@ function App() {
       {/* <FilteredLists/> */}
       {/* <FindList/> */}
       {/* <NameForm/> */}
-      <Todo/>
+      {/* <Todo/> */}
+      {/* <Counter/> */}
+      <PostList/>
     </>
   )
 }
