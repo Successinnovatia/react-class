@@ -11,6 +11,8 @@ import NameForm from './controlled-inputs/NameForm'
 import Todo from './todo-app/Todo'
 import Counter from './use-effect/Counter'
 import PostList from './use-effect/PostList'
+import CountRef from './use-ref/CountRef'
+import ExpensiveCalculation from './use-memo/ExpensiveCalculation'
 
 
 function App() {
@@ -29,7 +31,9 @@ function App() {
       {/* <NameForm/> */}
       {/* <Todo/> */}
       {/* <Counter/> */}
-      <PostList/>
+      {/* <PostList/> */}
+      {/* <CountRef/> */}
+      <ExpensiveCalculation/>
     </>
   )
 }
