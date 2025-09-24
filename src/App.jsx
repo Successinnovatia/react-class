@@ -13,6 +13,7 @@ import Counter from './use-effect/Counter'
 import PostList from './use-effect/PostList'
 import CountRef from './use-ref/CountRef'
 import ExpensiveCalculation from './use-memo/ExpensiveCalculation'
+import Note from './note-app/Note'
 
 
 function App() {
@@ -33,7 +34,8 @@ function App() {
       {/* <Counter/> */}
       {/* <PostList/> */}
       {/* <CountRef/> */}
-      <ExpensiveCalculation/>
+      {/* <ExpensiveCalculation/> */}
+      <Note/>
     </>
   )
 }
