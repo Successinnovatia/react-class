@@ -17,7 +17,7 @@ function NoteInput({addNote}) {
     <div className='flex justify-center mx-auto'>
         <input type="text" placeholder='enter your note' ref={inputRef} className='border-2 border-gray-300 p-2 rounded-md w-96'/>
 
-        <button onClick={handleAddNote} className='border-2 border-gray-300 w-16 rounded-md bg-blue-700 text-white'>Add Note</button>
+        <button onClick={handleAddNote} className='border-2 border-gray-300 w-24 ml-4 rounded-md bg-blue-700 text-white'>Add Note</button>
     </div>
   )
 }
