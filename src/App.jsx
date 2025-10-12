@@ -17,15 +17,71 @@ import Note from "./note-app/Note";
 import Header from "./use-context/Header";
 import { ThemeProvider } from "./context/ThemeContext";
 import HomePage from "./use-context/HomePage";
+import Home from "./react-router/pages/Home";
+import AboutUs from "./react-router/pages/AboutUs";
+import ContactUs from "./react-router/pages/ContactUs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./react-router/pages/Navbar";
+
+//React Router
+// Brouser Router -> wrap the app to enable routing
+// Routes -> to define all the routes eg /home , /aboutus
+// Route -> to define a single route
+// Link -> to navigate between routes
 
 function App() {
   const [count, setCount] = useState(0);
- 
+
+  // const [page, setPage] = useState("landing");
+
+  // function Landing() {
+  //   return (
+  //     <div className="text-center space-x-4 my-4">
+  //       <button
+  //         className="bg-blue-500 text-white px-4 py-2 rounded"
+  //         onClick={() => setPage("home")}
+  //       >
+  //         Home
+  //       </button>
+  //       <button
+  //         className="bg-blue-500 text-white px-4 py-2 rounded"
+  //         onClick={() => setPage("about")}
+  //       >
+  //         AboutUs
+  //       </button>
+  //       <button
+  //         className="bg-blue-500 text-white px-4 py-2 rounded"
+  //         onClick={() => setPage("contact")}
+  //       >
+  //         ContactUs
+  //       </button>
+  //     </div>
+  //   );
+  // }
+
+  // if (page === "home") {
+  //   return <Home />;
+  // } else if (page === "about") {
+  //   return <AboutUs />;
+  // } else if (page === "contact") {
+  //   return <ContactUs />;
+  // } else if (page === "landing") {
+  //   return <Landing />;
+  // }
 
   return (
     <>
       <ThemeProvider>
-        <HomePage/>
+        <Router>
+          <Navbar />
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+        </Router>
+        {/* <HomePage/> */}
         {/* <Greeting/>
         <UserStatus/>
         <Warning/> */}
